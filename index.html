@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" class="intro-active">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Rajeev â€” Portfolio</title>
+    <meta name="description" content="Portfolio of Krishna Rajeev, B.Tech Computer Science & Engineering student specializing in AI/ML, Full-Stack Development, and IoT systems.">
+    <!-- Google Fonts: Mr De Haviland for cursive, Syne & Archivo Black for headings, Share Tech Mono for code, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600&family=Mr+De+Haviland&family=Share+Tech+Mono&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-active">
+    <!-- 1. Dynamic Signature Landing Page (The Intro Reveal) -->
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="signature-container">
+            <svg viewBox="0 0 600 200" class="signature-svg">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="signature-text">Krishna Rajeev</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Custom Scroll Progress -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Sticky Glassmorphic Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">KRISHNA RAJEEV</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link"><span class="bracket">[ ]</span> The Playbook</a>
+                <a href="#projects" class="nav-link"><span class="bracket">[ ]</span> Systems</a>
+                <a href="#certifications" class="nav-link"><span class="bracket">[ ]</span> Certifications</a>
+                <a href="#contact" class="nav-link"><span class="bracket">[ ]</span> Contact</a>
+            </nav>
+            <a href="#contact" class="nav-contact-btn kinetic-blur">Contact â†˜</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section with Custom Parallax Tech & Athletic SVG Grids -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-grid" id="parallax-container">
+                <!-- Floyd Layer 1: Volleyball Court Boundary Overlay -->
+                <div class="tech-float float-court" data-depth="0.12">
+                    <svg viewBox="0 0 200 200" width="700" height="700" class="tech-svg">
+                        <rect x="10" y="10" width="180" height="180" fill="none" stroke="var(--accent-coral)" stroke-width="0.75" stroke-opacity="0.3" />
+                        <line x1="10" y1="100" x2="190" y2="100" stroke="var(--accent-cyan)" stroke-width="1.2" stroke-opacity="0.4" />
+                        <line x1="10" y1="70" x2="190" y2="70" stroke="var(--accent-coral)" stroke-width="0.75" stroke-opacity="0.2" stroke-dasharray="3 3" />
+                        <line x1="10" y1="130" x2="190" y2="130" stroke="var(--accent-coral)" stroke-width="0.75" stroke-opacity="0.2" stroke-dasharray="3 3" />
+                        <line x1="10" y1="10" x2="190" y2="190" stroke="var(--border-color)" stroke-width="0.25" stroke-opacity="0.15" />
+                        <line x1="190" y1="10" x2="10" y2="190" stroke="var(--border-color)" stroke-width="0.25" stroke-opacity="0.15" />
+                    </svg>
+                </div>
+
+                <!-- Floyd Layer 2: Equalizer Audio Rhythm Wave Paths -->
+                <div class="tech-float float-equalizer" data-depth="0.24">
+                    <svg viewBox="0 0 200 100" width="900" height="450" class="tech-svg">
+                        <path d="M 0 50 Q 25 15, 50 50 T 100 50 T 150 50 T 200 50" fill="none" stroke="var(--accent-cyan)" stroke-width="0.75" stroke-opacity="0.35" />
+                        <path d="M 0 50 Q 25 85, 50 50 T 100 50 T 150 50 T 200 50" fill="none" stroke="var(--accent-coral)" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2 2" />
+                        <!-- Equalizer vertical bars -->
+                        <line x1="20" y1="50" x2="20" y2="25" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="40" y1="50" x2="40" y2="75" stroke="var(--accent-coral)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="60" y1="50" x2="60" y2="15" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="80" y1="50" x2="80" y2="60" stroke="var(--accent-coral)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="100" y1="50" x2="100" y2="85" stroke="var(--accent-coral)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="120" y1="50" x2="120" y2="30" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="140" y1="50" x2="140" y2="70" stroke="var(--accent-coral)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="160" y1="50" x2="160" y2="20" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-opacity="0.3" />
+                        <line x1="180" y1="50" x2="180" y2="80" stroke="var(--accent-coral)" stroke-width="1.5" stroke-opacity="0.3" />
+                    </svg>
+                </div>
+
+                <!-- Floyd Layer 3: Interconnected Neural Node Network -->
+                <div class="tech-float float-nodes" data-depth="0.35">
+                    <svg viewBox="0 0 100 100" width="550" height="550" class="tech-svg">
+                        <circle cx="20" cy="30" r="1.5" fill="var(--accent-cyan)" />
+                        <circle cx="50" cy="15" r="1.5" fill="var(--accent-coral)" />
+                        <circle cx="80" cy="25" r="1.5" fill="var(--accent-cyan)" />
+                        <circle cx="15" cy="65" r="1.5" fill="var(--accent-coral)" />
+                        <circle cx="45" cy="80" r="1.5" fill="var(--accent-cyan)" />
+                        <circle cx="75" cy="70" r="1.5" fill="var(--accent-coral)" />
+                        <circle cx="90" cy="50" r="1.5" fill="var(--accent-cyan)" />
+                        <circle cx="35" cy="45" r="2" fill="var(--accent-cyan)" />
+                        <circle cx="60" cy="55" r="2" fill="var(--accent-coral)" />
+                        
+                        <line x1="20" y1="30" x2="50" y2="15" stroke="var(--accent-cyan)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="50" y1="15" x2="80" y2="25" stroke="var(--accent-coral)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="20" y1="30" x2="35" y2="45" stroke="var(--accent-cyan)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="35" y1="45" x2="15" y2="65" stroke="var(--accent-coral)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="15" y1="65" x2="45" y2="80" stroke="var(--accent-cyan)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="45" y1="80" x2="60" y2="55" stroke="var(--accent-coral)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="60" y1="55" x2="75" y2="70" stroke="var(--accent-cyan)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="75" y1="70" x2="90" y2="50" stroke="var(--accent-coral)" stroke-width="0.3" stroke-opacity="0.25" />
+                        <line x1="90" y1="50" x2="80" y2="25" stroke="var(--accent-cyan)" stroke-width="0.3" stroke-opacity="0.25" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Foreground Layer: Cinematic Typography & CTA -->
+            <div class="hero-fg-content">
+                <div class="title-reveal-wrapper">
+                    <h1 class="giant-title">KRISHNA RAJEEV</h1>
+                </div>
+                <div class="hero-sub-meta">
+                    <div class="role-container">
+                        <span class="role-prefix">RUN // </span>
+                        <span id="typewriter" class="typewriter-text"></span><span class="cursor">_</span>
+                    </div>
+                    <div class="location-badge">
+                        <i data-lucide="map-pin" class="badge-icon"></i>
+                        <span>Trivandrum, Kerala, India</span>
+                    </div>
+                    
+                    <!-- Stylized Button for Resume -->
+                    <a href="KRISHNA RAJEEV RESUME.pdf" download="KRISHNA RAJEEV RESUME.pdf" class="btn btn-primary resume-btn-pill kinetic-blur pulse-frequency" id="resume-download-btn">
+                        <span>Download Resume</span>
+                        <i data-lucide="arrow-down-to-line"></i>
+                    </a>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/Krishna-302004" target="_blank" rel="noopener noreferrer" class="social-link kinetic-blur" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                            <span class="social-text">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/krishna-rajeev-a32767308" target="_blank" rel="noopener noreferrer" class="social-link kinetic-blur" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                            <span class="social-text">LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/_.kri_x._?igsh=MTZnZDhxNGVqdjJydA%3D%3D&utm_source=q" target="_blank" rel="noopener noreferrer" class="social-link kinetic-blur" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                            <span class="social-text">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viewport Scroll self-drawing line -->
+        <div class="section-border-line">
+            <svg width="100%" height="2" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+            </svg>
+        </div>
+
+        <!-- "The Playbook" Section (Asymmetric Narrative Grid Layout) -->
+        <section id="about" class="about-section">
+            <div class="about-grid">
+                <!-- Left Column: Typographic Statements, Quotes, Details, Accent -->
+                <div class="about-col-left border-right">
+                    <div class="playbook-statement-wrapper">
+                        <h2 class="playbook-statement">
+                            ENGINEERING IS ATHLETICS: HIGH VELOCITY, REAL-TIME PRECISION, AND ZERO ROOM FOR ERROR. CODE HAS RHYTHM. DRIVEN BY HIGH SOCIAL ENERGY AND COLLABORATIVE TEAMWORK TO SOLVE REAL-WORLD PROBLEMS.
+                        </h2>
+                        <span class="playbook-script-overlay">the playbook</span>
+                    </div>
+
+                    <!-- Quotes Cards Block -->
+                    <div class="quotes-container">
+                        <div class="quote-card pulse-frequency">
+                            <div class="quote-card-header-icon">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <p>"Sprinting taught me acceleration; engineering taught me scale. Whether Iâ€™m exploding out of blocks on the track or optimizing a YOLOv8 network model, I play to win."</p>
+                        </div>
+                        <div class="quote-card pulse-frequency">
+                            <div class="quote-card-header-icon">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <p>"Code has a bassline. Like a perfectly mixed track or a textbook team transition on the volleyball court, stellar data-driven systems thrive entirely on rhythm, social synergy, and flawless coordination."</p>
+                        </div>
+                        <div class="quote-card pulse-frequency">
+                            <div class="quote-card-header-icon">
+                                <i data-lucide="coffee"></i>
+                            </div>
+                            <p>"Fueled by good coffee, loud music, heavy social energy, and an unyielding competitive spirit to solve real-world engineering problems through data science."</p>
+                        </div>
+                    </div>
+
+                    <!-- Compact Details Box -->
+                    <div class="playbook-compact-details pulse-frequency">
+                        <span class="meta-label">// METRIC_DIRECTORY</span>
+                        <div class="directory-list">
+                            <div class="dir-row">
+                                <span class="dir-lbl">Languages Spoken:</span>
+                                <span class="dir-val">English, Hindi, Malayalam</span>
+                            </div>
+                            <div class="dir-row">
+                                <span class="dir-lbl">Contact Email:</span>
+                                <a href="mailto:krishnarajeev2004@gmail.com" class="dir-val val-hover">krishnarajeev2004@gmail.com</a>
+                            </div>
+                            <div class="dir-row">
+                                <span class="dir-lbl">Direct Phone:</span>
+                                <a href="tel:+918547087804" class="dir-val val-hover">+91 8547087804</a>
+                            </div>
+                            <div class="dir-row">
+                                <span class="dir-lbl">Base camp:</span>
+                                <span class="dir-val">Trivandrum, Kerala, India</span>
+                            </div>
+                            <div class="dir-row">
+                                <span class="dir-lbl">Repository Links:</span>
+                                <div class="dir-social-links">
+                                    <a href="https://github.com/Krishna-302004" target="_blank" rel="noopener noreferrer" class="social-bracket-link"><span class="bracket">[ ]</span> GitHub</a>
+                                    <a href="https://www.linkedin.com/in/krishna-rajeev-a32767308" target="_blank" rel="noopener noreferrer" class="social-bracket-link"><span class="bracket">[ ]</span> LinkedIn</a>
+                                    <a href="https://www.instagram.com/_.kri_x._?igsh=MTZnZDhxNGVqdjJydA%3D%3D&utm_source=q" target="_blank" rel="noopener noreferrer" class="social-bracket-link"><span class="bracket">[ ]</span> Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Accent: Slow Rotating Circular Text Path -->
+                    <div class="rotating-badge-container">
+                        <svg viewBox="0 0 100 100" class="rotating-badge">
+                            <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
+                            <text>
+                                <textPath href="#circlePath" class="badge-text">CONTACT â†˜ CONTACT â†˜ CONTACT â†˜ </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Right Column: Profile Headshot & Scoreboard Stats -->
+                <div class="about-col-right">
+                    <div class="headshot-wrapper kinetic-blur">
+                        <img src="profile.jpg" alt="Krishna Rajeev" class="headshot-image">
+                    </div>
+
+                    <!-- Scoreboard Stats Block -->
+                    <div class="scoreboard-stats">
+                        <div class="score-line">
+                            <span class="score-num">8.89</span>
+                            <span class="score-label">Current CGPA</span>
+                        </div>
+                        <div class="score-line">
+                            <span class="score-num">2023-27</span>
+                            <span class="score-label">Batch Group</span>
+                        </div>
+                        <div class="score-line">
+                            <span class="score-num">3+ Core</span>
+                            <span class="score-label">Systems Built</span>
+                        </div>
+                        <div class="score-line full-width">
+                            <span class="score-num">MBCET</span>
+                            <span class="score-label">Mar Baselios College of Engineering and Technology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viewport Scroll self-drawing line -->
+        <div class="section-border-line">
+            <svg width="100%" height="2" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+            </svg>
+        </div>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-header-row">
+                <div>
+                    <span class="meta-label">// PLAYS_MADE</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                </div>
+            </div>
+            
+            <div class="experience-list">
+                <!-- Internship 1 -->
+                <div class="experience-row pulse-frequency">
+                    <div class="exp-left">
+                        <span class="exp-role">Full-Stack Developer Intern</span>
+                        <span class="exp-company">SAASVAAP INC</span>
+                    </div>
+                    <div class="exp-center">
+                        <div class="exp-tech-stack">
+                            <span class="tech-badge">Java Spring Boot</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">JDBC</span>
+                            <span class="tech-badge">RESTful APIs</span>
+                            <span class="tech-badge">Thymeleaf</span>
+                        </div>
+                        <p class="exp-desc">
+                            Java-based enterprise systems development leveraging JDBC connection pooling and relational schemas. Architected a secure, database-driven Student Management System featuring multi-role authentication filters, secure session states, and full operational CRUD pipelines. Designed and deployed clean RESTful APIs facilitating fast backend-frontend exchange. Integrated web markup pages using Thymeleaf engine interfaces along with standard HTML5, CSS3 elements, and DOM-manipulating vanilla JavaScript workflows.
+                        </p>
+                    </div>
+                    <div class="exp-right">
+                        <span class="exp-date">12/2024 â€” 01/2025</span>
+                    </div>
+                </div>
+                
+                <!-- Event Lead -->
+                <div class="experience-row pulse-frequency">
+                    <div class="exp-left">
+                        <span class="exp-role">Content &amp; Event Lead</span>
+                        <span class="exp-company">Emerging Professional Of Tribe, MBCET</span>
+                    </div>
+                    <div class="exp-center">
+                        <p class="exp-desc">
+                            Collaborated in content development, event planning, and visual design for innovation and entrepreneurship programs. Designed visual elements and organized coordination pipelines for collaborative student growth campaigns.
+                        </p>
+                    </div>
+                    <div class="exp-right">
+                        <span class="exp-date">12/2024 â€” 01/2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kinetic Blank-Space Divider Spacer -->
+        <div class="kinetic-grid-spacer">
+            <span class="spacer-code">// SYSTEM_FREQUENCY_ACTIVE</span>
+            <div class="visualizer-mini">
+                <div class="audio-wave-visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Viewport Scroll self-drawing line -->
+        <div class="section-border-line">
+            <svg width="100%" height="2" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+            </svg>
+        </div>
+
+        <!-- THE SKILL ROSTER (Restored categories, glowing rows) -->
+        <section id="skills" class="skills-section">
+            <div class="section-header-row">
+                <div>
+                    <span class="meta-label">// SYSTEM_CAPABILITIES</span>
+                    <h2 class="section-title">THE SKILL ROSTER</h2>
+                </div>
+            </div>
+            
+            <div class="skills-roster">
+                <div class="roster-row pulse-frequency">
+                    <span class="roster-category">Programming Languages</span>
+                    <div class="roster-tags">
+                        <span class="roster-tag kinetic-blur">C</span>
+                        <span class="roster-tag kinetic-blur">Java</span>
+                        <span class="roster-tag kinetic-blur">Python</span>
+                        <span class="roster-tag kinetic-blur">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="roster-row pulse-frequency">
+                    <span class="roster-category">AI/ML &amp; Computer Vision</span>
+                    <div class="roster-tags">
+                        <span class="roster-tag kinetic-blur">Machine Learning</span>
+                        <span class="roster-tag kinetic-blur">Deep Learning</span>
+                        <span class="roster-tag kinetic-blur">Scikit-learn</span>
+                        <span class="roster-tag kinetic-blur">TensorFlow</span>
+                        <span class="roster-tag kinetic-blur">Random Forest</span>
+                        <span class="roster-tag kinetic-blur">OpenCV</span>
+                        <span class="roster-tag kinetic-blur">Pose Estimation</span>
+                        <span class="roster-tag kinetic-blur">NumPy</span>
+                        <span class="roster-tag kinetic-blur">Pandas</span>
+                        <span class="roster-tag kinetic-blur">Feature Engineering</span>
+                    </div>
+                </div>
+                
+                <div class="roster-row pulse-frequency">
+                    <span class="roster-category">Web &amp; Backend</span>
+                    <div class="roster-tags">
+                        <span class="roster-tag kinetic-blur">Flask</span>
+                        <span class="roster-tag kinetic-blur">Java Spring Boot</span>
+                        <span class="roster-tag kinetic-blur">REST APIs</span>
+                        <span class="roster-tag kinetic-blur">Thymeleaf</span>
+                        <span class="roster-tag kinetic-blur">HTML</span>
+                        <span class="roster-tag kinetic-blur">CSS</span>
+                    </div>
+                </div>
+                
+                <div class="roster-row pulse-frequency">
+                    <span class="roster-category">Databases &amp; Cloud</span>
+                    <div class="roster-tags">
+                        <span class="roster-tag kinetic-blur">MySQL</span>
+                        <span class="roster-tag kinetic-blur">PostgreSQL</span>
+                        <span class="roster-tag kinetic-blur">SQLite</span>
+                        <span class="roster-tag kinetic-blur">AWS IoT Core</span>
+                        <span class="roster-tag kinetic-blur">DynamoDB</span>
+                    </div>
+                </div>
+                
+                <div class="roster-row pulse-frequency">
+                    <span class="roster-category">Hardware &amp; IoT</span>
+                    <div class="roster-tags">
+                        <span class="roster-tag kinetic-blur">ESP32</span>
+                        <span class="roster-tag kinetic-blur">Arduino</span>
+                        <span class="roster-tag kinetic-blur">Raspberry Pi</span>
+                        <span class="roster-tag kinetic-blur">Jetson Nano</span>
+                    </div>
+                </div>
+                
+                <div class="roster-row pulse-frequency">
+                    <span class="roster-category">Tools &amp; Frameworks</span>
+                    <div class="roster-tags">
+                        <span class="roster-tag kinetic-blur">IntelliJ IDEA</span>
+                        <span class="roster-tag kinetic-blur">MySQL Workbench</span>
+                        <span class="roster-tag kinetic-blur">Figma</span>
+                        <span class="roster-tag kinetic-blur">Git/GitHub</span>
+                        <span class="roster-tag kinetic-blur">VS Code</span>
+                        <span class="roster-tag kinetic-blur">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viewport Scroll self-drawing line -->
+        <div class="section-border-line">
+            <svg width="100%" height="2" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+            </svg>
+        </div>
+
+        <!-- Systems Grid (Projects + High-Energy Graphic breakouts) -->
+        <section id="projects" class="projects-section">
+            <div class="section-header-row">
+                <div>
+                    <span class="meta-label">// SYSTEMS_DEPLOYED</span>
+                    <h2 class="section-title">Engineered Architectures</h2>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: WILD AI -->
+                <div class="project-card pulse-frequency">
+                    <div class="project-card-header">
+                        <span class="proj-number">SYS_01 //</span>
+                        <div class="proj-badges">
+                            <span class="badge badge-accent">AI/ML</span>
+                            <span class="badge">YOLOv8</span>
+                            <span class="badge-status">In Development</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="proj-title">WILD AI â€” Wildlife &amp; Intrusion Monitor</h3>
+                        <p class="proj-description">
+                            AI-driven threat intelligence platform designed to address real-world human-wildlife conflicts. Built using custom-trained computer vision models based on YOLOv8 for edge intelligence tracking along forest boundaries. Developed in synchronization with functional requirements from the Kerala Forest Department to support edge surveillance. Features a real-time, low-latency SMS-based notifications warning loop for rangers upon hazard detections, feeding active telemetry logs and images into a central monitoring dashboard.
+                        </p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="meta-label">CV_VISION</span>
+                        <a href="https://github.com/Krishna-302004" target="_blank" rel="noopener noreferrer" class="proj-link kinetic-blur"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Graphic Breakout 1: Sprinter Silhouette -->
+                <div class="project-visual-card pulse-frequency" style="background-image: url('tech_sprinter.png');">
+                    <div class="visual-card-content">
+                        <span class="visual-card-tag">// ATHLETIC_SPEED</span>
+                        <h4 class="visual-card-title">Velocity &amp; Scale</h4>
+                    </div>
+                </div>
+
+                <!-- Project 2: Automated Railway Gate System -->
+                <div class="project-card pulse-frequency">
+                    <div class="project-card-header">
+                        <span class="proj-number">SYS_02 //</span>
+                        <div class="proj-badges">
+                            <span class="badge badge-accent">IoT</span>
+                            <span class="badge">ESP32</span>
+                            <span class="badge">AWS Cloud</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="proj-title">Automated Railway Gate System</h3>
+                        <p class="proj-description">
+                            IoT-connected smart railway infrastructure optimizing crossing safety. Utilizing low-power microcontrollers (ESP32), the system integrates track-mounted vibration and passive infrared (PIR) sensors to form an active, fault-tolerant train detection grid. On detection, microcontrollers drive automated servo barrier mechanics while logging real-time telemetry events via MQTT to AWS IoT Core, recording logs in Amazon DynamoDB, and broadcasting push notification alerts via AWS SNS.
+                        </p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="meta-label">AWS_IOT</span>
+                        <a href="https://github.com/Krishna-302004" target="_blank" rel="noopener noreferrer" class="proj-link kinetic-blur"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: BOOKFLICK -->
+                <div class="project-card pulse-frequency">
+                    <div class="project-card-header">
+                        <span class="proj-number">SYS_03 //</span>
+                        <div class="proj-badges">
+                            <span class="badge badge-accent">Full-Stack</span>
+                            <span class="badge">Spring Boot</span>
+                            <span class="badge">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="proj-title">BOOKFLICK â€” Community Library</h3>
+                        <p class="proj-description">
+                            Full-stack peer-to-peer web application designed to track community book-lending processes. Built on a Java Spring Boot micro-architecture, it utilizes custom relational database models mapping user credentials, libraries, and active transactions. Implemented secure token-based user authentication filters, custom query index search engines for catalog retrieval, and automated return tracking logs.
+                        </p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="meta-label">JAVA_SPRING</span>
+                        <a href="https://github.com/Krishna-302004" target="_blank" rel="noopener noreferrer" class="proj-link kinetic-blur"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Graphic Breakout 2: Audio Court -->
+                <div class="project-visual-card pulse-frequency" style="background-image: url('audio_court.png');">
+                    <div class="visual-card-content">
+                        <span class="visual-card-tag">// AUDIO_RHYTHM</span>
+                        <h4 class="visual-card-title">Equalizer &amp; Grid</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viewport Scroll self-drawing line -->
+        <div class="section-border-line">
+            <svg width="100%" height="2" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+            </svg>
+        </div>
+
+        <!-- Certifications & Curriculum Showcase Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="section-header-row">
+                <div>
+                    <span class="meta-label">// VALIDATED_CREDENTIALS</span>
+                    <h2 class="section-title">Certifications &amp; Core Curriculum</h2>
+                </div>
+            </div>
+            
+            <div class="certifications-container">
+                <!-- NPTEL Credentials -->
+                <div class="cert-group border-right">
+                    <span class="cert-group-label">// NPTEL Online Credentials (IITs)</span>
+                    <div class="cert-cards-list">
+                        <div class="cert-card pulse-frequency kinetic-blur">
+                            <div class="cert-badge-icon"><i data-lucide="award"></i></div>
+                            <div class="cert-info">
+                                <h3 class="cert-name">Introduction to Large Language Models (LLMs)</h3>
+                                <span class="cert-issuer">IIT Madras â€” NPTEL (Elite)</span>
+                                <div class="cert-meta">
+                                    <span class="cert-stat">Score: <strong>61%</strong></span>
+                                    <span class="cert-date">Jan - Apr 2026</span>
+                                </div>
+                                <span class="cert-roll">Roll No: NPTEL26CS88S166700518</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card pulse-frequency kinetic-blur">
+                            <div class="cert-badge-icon"><i data-lucide="award"></i></div>
+                            <div class="cert-info">
+                                <h3 class="cert-name">Deep Learning</h3>
+                                <span class="cert-issuer">IIT Ropar â€” NPTEL (Elite)</span>
+                                <div class="cert-meta">
+                                    <span class="cert-stat">Score: <strong>66%</strong></span>
+                                    <span class="cert-date">Jul - Oct 2025</span>
+                                </div>
+                                <span class="cert-roll">Roll No: NPTEL25CS106S470100834</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card pulse-frequency kinetic-blur">
+                            <div class="cert-badge-icon"><i data-lucide="award"></i></div>
+                            <div class="cert-info">
+                                <h3 class="cert-name">ML and DL â€” Fundamentals &amp; Applications</h3>
+                                <span class="cert-issuer">IIT Guwahati â€” NPTEL (Elite)</span>
+                                <div class="cert-meta">
+                                    <span class="cert-stat">Score: <strong>60%</strong></span>
+                                    <span class="cert-date">Jul - Oct 2025</span>
+                                </div>
+                                <span class="cert-roll">Roll No: NPTEL25EE181S1270100697</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Coursework Blocks -->
+                <div class="cert-group">
+                    <span class="cert-group-label">// Specialized CSE Curriculum</span>
+                    <div class="curriculum-interactive-grid">
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-301</span>
+                            <h4 class="curriculum-name">Data Structures</h4>
+                            <p class="curriculum-desc">Arrays, Trees, Graphs, Memory allocation</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-302</span>
+                            <h4 class="curriculum-name">Analysis of Algorithms</h4>
+                            <p class="curriculum-desc">Asymptotic complexity, DP, greedy strategies</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-303</span>
+                            <h4 class="curriculum-name">Databases</h4>
+                            <p class="curriculum-desc">SQL, Relational algebra, transaction isolation</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-304</span>
+                            <h4 class="curriculum-name">Operating Systems</h4>
+                            <p class="curriculum-desc">Scheduling, virtual memory, synchronization</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-401</span>
+                            <h4 class="curriculum-name">Artificial Intelligence</h4>
+                            <p class="curriculum-desc">Heuristics, search trees, logic networks</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-402</span>
+                            <h4 class="curriculum-name">Machine Learning</h4>
+                            <p class="curriculum-desc">Supervised models, gradient descent, clustering</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-205</span>
+                            <h4 class="curriculum-name">Object-Oriented Programming</h4>
+                            <p class="curriculum-desc">Polymorphism, interfaces, design patterns</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-410</span>
+                            <h4 class="curriculum-name">Data Science</h4>
+                            <p class="curriculum-desc">Statistical models, EDA, visualization</p>
+                        </div>
+                        <div class="curriculum-block pulse-frequency kinetic-blur">
+                            <span class="curriculum-code">CSE-315</span>
+                            <h4 class="curriculum-name">Networking</h4>
+                            <p class="curriculum-desc">OSI Model, TCP/IP, sockets, packet switching</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viewport Scroll self-drawing line -->
+        <div class="section-border-line">
+            <svg width="100%" height="2" preserveAspectRatio="none">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+            </svg>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info-col border-right">
+                    <span class="meta-label">// CONNECT_SYSTEM</span>
+                    <h2 class="contact-heading">Let's build something intelligent.</h2>
+                    <p class="contact-subtext">
+                        If you're looking for an engineering student specializing in ML modeling, full-stack Spring architectures, or embedded IoT systems, feel free to reach out. I am open to internships, projects, and technical collaborations.
+                    </p>
+                    <div class="contact-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Email Address</span>
+                            <a href="mailto:krishnarajeev2004@gmail.com" class="detail-value val-hover">krishnarajeev2004@gmail.com</a>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Direct Line</span>
+                            <a href="tel:+918547087804" class="detail-value val-hover">+91 8547087804</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-col">
+                    <span class="meta-label">// SEND_TRANSMISSION</span>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
+                            <label for="name">Your Name</label>
+                            <span class="input-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email">
+                            <label for="email">Email Address</label>
+                            <span class="input-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder=" " rows="4"></textarea>
+                            <label for="message">Message Details</label>
+                            <span class="input-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn kinetic-blur">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                        <div class="form-feedback" id="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="copyright">&copy; 2026 Krishna Rajeev. Engineered with precision.</span>
+            <div class="footer-links">
+                <a href="https://github.com/Krishna-302004" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/krishna-rajeev-a32767308" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/_.kri_x._?igsh=MTZnZDhxNGVqdjJydA%3D%3D&utm_source=q" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
